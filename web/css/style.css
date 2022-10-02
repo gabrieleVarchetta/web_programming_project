@@ -1,0 +1,596 @@
+/* setting del font e del grid layout */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;700&display=swap');
+
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid, .grid-footer, .grid-products, .grid--insert-products, .grid-members {
+  display: block;
+  padding: 10px;
+}
+  
+.hidden {
+    display: none;
+}
+
+.large {
+    font-size: 26px;
+}
+
+.x-large {
+    font-size: 38px;
+}
+
+.default {
+    font-size: 16px;
+}
+
+.default-size {
+    font-size: 14px;
+}
+
+.large-size {
+    font-size: 16px;
+}
+
+.x-large-size {
+    font-size: 18px;
+}
+
+span {
+    display: block;
+    color: #FF5349;
+    margin-bottom: 10px;
+}
+
+.size-btn {
+  text-align: center;
+  background-color: #24262b;
+  color: #bbbbbb;
+  border-radius: 20px;
+  border: 1px solid #24262b;
+  font-size: 14px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.size-btn:hover {
+  color: white;  
+}
+
+.active-font {
+    color: white;
+}
+
+/* rimozione degli stili delle liste e dei link*/
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* setting contenuti della pagina */
+body {
+  color:#bbbbbb;
+  background-color: #24262b;
+  line-height: 1.5;
+}
+
+/* rende le immagini responsive, scalano la dimensione in automatico, ma mai sopra la grandezza prefissata */
+header img, aside img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* header */
+header {
+  background-image: linear-gradient(#ff8a3b, #ff6900);
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  font-size: 72px;
+}
+
+/* navbar */
+nav {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #ff6900;
+    text-align: center;
+}
+
+nav a {
+  color:#ffffff;
+  font-size: 28px;
+  padding: 0 15px;
+}
+
+nav ul li.active {
+  font-weight: bold;
+}
+
+/* main */
+main {
+  padding-left: 10px;
+}
+
+#slogan {
+  font-size: 36px;
+  color: white;
+}
+
+.content {
+    margin-bottom: 15px;
+}
+
+.content h3 {
+  color: white;
+}
+
+/* #content p{
+
+} */
+
+/* aside */
+aside {
+  border-left: 1px solid #ff6900;
+  padding-left: 10px;
+}
+
+.aside-content {
+  margin-bottom: 20px;
+}
+
+.aside-content h4 {
+  color: white;
+}
+
+aside a {
+    color: #bbbbbb;
+    transition: all .3s ease;
+}
+
+aside a:hover {
+    color: white;
+    padding-left: 6px;
+}
+
+/* products */
+#product-container {
+    text-align: center;
+}
+
+.product-page-products img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.product-page-products h4 {
+    margin-bottom: 15px;
+}
+
+.product-page-products {
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+#prevProduct, #nextProduct {
+  background-color: #ff6900;
+  color: white;
+  border-radius: 40%;
+  border: 1px solid #ff6900;
+  padding: 8px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: 20px;
+}
+
+/* insert products */
+#insert-products {
+  text-align: center;
+}
+
+#insert-products h2 {
+    margin-bottom: 15px;
+}
+
+#insert-products p {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#insert-products div {
+    margin-bottom: 15px;
+}
+
+#insert-products input {
+  display: inline-block;
+}
+
+#insert-products label {
+  display: block;
+}
+
+#insert-products input, #insert-products select {
+  text-align: center;
+  background-color: #24262b;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#insert-products input[type="submit"] {
+  text-align: center;
+  background-color: #ff6900;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: auto;
+}
+
+#insert-products input[type="submit"]:hover {
+  background-color: #da5600;
+}
+
+/* members */
+.membro {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.membro img {
+  border-radius: 10px;
+}
+
+/* login */
+#login {
+  text-align: center;
+}
+
+#login div {
+    margin-bottom: 15px;
+}
+
+#login label {
+    display:block;
+}
+#login h2 {
+  margin-bottom: 15px;
+}
+
+#login input {
+  display: inline-block;
+}
+
+#login p {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#login input, #login input:focus {
+  text-align: center;
+  background-color: #24262b;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+#login input[type="submit"] {
+  text-align: center;
+  background-color: #ff6900;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: auto;
+  display: block;
+}
+
+#login form {
+  margin-bottom: 20px;
+}
+
+#login input[type="submit"]:hover {
+  background-color: #da5600;
+}
+
+/* pagina errore */
+#go-back-div {
+    text-align: center;
+}
+
+#go-back-div h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#go-back-div input {
+  text-align: center;
+  background-color: #ff6900;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: 0 auto 25px auto;
+}
+
+#go-back-div input:hover {
+    background-color: #da5600;
+}
+
+/* area personale */
+.product img {
+  border-radius: 5px;
+}
+.product {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#user-info {
+    margin-bottom: 25px;
+}
+
+#user-info h3 {
+    margin-top: 25px;
+}
+
+#go-to-insert-products p {
+    margin-bottom: 10px;
+}
+
+#logout {
+    text-align: center;
+}
+
+#logout h3 {
+    margin-bottom: 10px;
+}
+
+#logout input, #go-to-insert-products input {
+  text-align: center;
+  background-color: #ff6900;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: auto;
+}
+
+#logout input:hover, #go-to-insert-products input:hover {
+    background-color: #da5600;
+}
+
+/* pagina prodotto inserito */
+#prodotto-inserito-info {
+    text-align: center;
+}
+
+#prodotto-inserito-info input {
+  text-align: center;
+  background-color: #ff6900;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid #ff6900;
+  font-size: 14px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  margin: 0 auto 25px auto;
+}
+
+#prodotto-inserito-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#prodotto-inserito-info p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#prodotto-inserito-info input:hover {
+    background-color: #da5600;
+}
+
+/* footer */
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grid-footer {
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.grid-footer div {
+  margin-bottom: 15px;
+}
+
+.grid-footer h4 {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.grid-footer li:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.grid-footer h4::before {
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: -10px;
+  background-color: #ff6900;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.grid-footer a {
+  font-weight: 300;
+  transition: all .3s ease;
+  color: #bbbbbb;
+}
+
+.grid-footer a:hover {
+  font-weight: 500;
+  color: white;
+}
+
+/* per tablet in landscape e desktop/laptop vengono applicate queste regole */
+@media (min-width: 1280px) {
+  .grid, .grid-footer, .grid-products, .grid--insert-products {
+    display: grid;
+    grid-gap: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid--insert-products {
+    grid-template-columns: 250px 500px;
+  }
+    
+  .grid-members, .grid-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-footer{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* navbar */
+  nav ul {
+    justify-content: space-around;
+    display: flex;
+  }
+
+  nav ul li{
+    display: inline;
+    position: relative;
+  }
+
+  nav a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+
+  nav li::after {
+    content:'';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .5s;
+  }
+
+  nav li:hover::after {
+      width: 100%;
+  }
+
+  nav li.active::after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: #ffffff;
+  }
+
+  /* header */
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  /* products */
+  .product-page-products {
+display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+  /* area personale */
+  .product {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .descrizione {
+    margin-left: 15px;
+  }
+
+  /* members */
+  .membro {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .members-desc{
+    padding-left: 15px;
+  }
+  
+  /* pagina prodotto inserito */
+  #prodotto-inserito-info {
+    position: relative;
+    top: 150px;
+  }
+  
+  /* pagina errore */
+  #go-back-div {
+    position: relative;
+    top: 150px;
+}
+  
+}
